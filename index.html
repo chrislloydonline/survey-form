@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="styles.css"
+  <meta charset="utf-8>"
+</head>
+
+<body>
+  <h1 id="title">Favourite Crisp Survey</h1>
+  <p id="description">Tell us all about your favourite crisp flavour!</p>
+
+<form id="survey-form">
+<fieldset>
+  <h3>Who Are You?</h3>
+      <label id="name-label">Enter Your First Name: <input id="name" type="text" required placeholder="Your First Name Is..."></label>
+      <label>Enter Your Last Name: <input id="surname" type="text" required placeholder="Your Surname Is..."></label>
+      <label id="email-label">Enter Your E-Mail: <input id="email" type="email" required placeholder="Type Your E-Mail Address"></label>
+      <label>Enter A Password: <input id="password type="password" pattern="[a-z0-5]{8,}" required placeholder="Create A Password"></label>
+      <label id="number-label">Input your age (years): <input id="number" type="number" name="age" min="13" max="120" required placeholder="Age?"></label>
+</fieldset>
+
+<fieldset>
+  <h3>Who's Your Favourite Brand?</h3>
+      <label><input type="radio" name="group1" value="1"> Walkers</label>
+      <label><input type="radio" name="group1" value="2"> Seabrooks</label>
+      <label><input type="radio" name="group1" value="3"> McCoys</label>
+      <label><input type="radio"name="group1" value="4"> Other Brand</label>
+      <input type="checkbox" value="daily" required>Do you eat crisps everday?
+</fieldset>
+
+<fieldset>
+  <h3>What About Your Favourite Flavour?</h3>
+  <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Ready Salted</option>
+        <option value="2">Cheese & Onion</option>
+        <option value="3">Salt & Vinegar</option>
+        <option value="4">Prawn Cocktail</option>
+        <option value="4">Other</option>
+  </select>
+      <label>If other, please tell us which:
+          <textarea name="bio" rows="3" cols="30" placeholder="Supermarket Own Brand..."></textarea>
+			  </label>
+</fieldset>
+<input type="checkbox" value="agree" required>By submitting this form you agree to your information provided above being used internally for future business expansion.
+  <input id="submit" type="submit" value="Submit" />
+</form>
+
+</body>
+
+<footer>
+  <p id="footer">Christopher Lloyd Surveys Limited &copy 2022</p>
+</footer>
